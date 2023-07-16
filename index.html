@@ -4,34 +4,60 @@
 <head>
   <title>Birthday Wishes for Anni my Love</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Random Background Color</title>
+  <style>
+    body {
+      transition: background-color 0.5s ease-in-out;
+    }
+  </style>
 </head>
+<body>
+  <script>
+    function getRandomColor() {
+      const letters = 'ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 6)];
+      }
+      return color;
+    }
 
+    setInterval(function () {
+      document.body.style.backgroundColor = getRandomColor();
+    }, 1000);
+  </script>
+</body>
 <body>
   <header>
-
+    <div class="top-bar"></div>
     <nav>
-      <!-- Navigation bar code here -->
+      <ul class="horizontal-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">Message</a></li>
+        <li><a href="#guestbook">Birthday Wishes</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <section id="home">
-      <div class="container">
+      <div class="container1">
         <h1>Happy Birthday, Anni!</h1>
-        <img src="./Images/4.jpg" alt="[Anni]">
+        <img src="./Images/16.png" alt="[Anni]">
       </div>
     </section>
 
     <section id="gallery">
-      <div class="container">
-        <h2>Photo Gallery</h2>
+      <div class="container2">
+        <h2>Sweetheart, this photo gallery is a celebration of your beauty and the way you light up my world.</h2>
         <div class="gallery">
           <div class="photo">
-            <img src="./Images/4.jpg" alt="Photo 1">
+            <img src="./Images/14.jpg" alt="Photo 1">
             <p>Love quote 1</p>
           </div>
           <div class="photo">
-            <img src="./Images/4.jpg" alt="Photo 2">
+            <img src="./Images/13.jpg" alt="Photo 2">
             <p>Love quote 2</p>
           </div>
           <div class="gallery" id="photoGallery">
@@ -41,11 +67,31 @@
     </section>
 
     <section id="about">
-      <div class="container">
-        <h2>About [Your Girlfriend's Name]</h2>
+      <div class="container3">
+        <h2>
+          <p id="NewV">My Love, Anni</p>
+
+          <p>On this special day, I want to take a moment to express the things I absolutely adore about you.</p>
+
+          <p>love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.</p> 
+          
+          <p>The sweet things you say never fail to melt my heart, leaving me feeling cherished and loved in ways I never knew were possible.</p>
+          
+          <p>The way you tease me with a mischievous smile brings a sense of playful joy to our relationship, keeping the sparks alive.</p>
+          
+          <p>I appreciate the effort you put into making lists and planning conversations, showing just how much you value our connection.</p>
+          
+          <p>Your sense of humor is a constant source of delight, brightening even the dullest of days with your quick wit and clever jokes.</p>
+          
+          <p>The way you make me feel is beyond words; it's a feeling of contentment, joy, and a love that knows no bounds.</p>
+          
+          <p>Even when we're physically apart, your love reaches me from afar, as if your love and care carries the strength of our connection across the miles.</p>
+          
+          <p>Happy Birthday, my innocent love.</p>
+          
+          </h2>
         <div class="about-content">
-          <p>Write your heartfelt message about your girlfriend here.</p>
-          <img src="./Images/4.jpg" alt="[Your Girlfriend's Name]">
+          <img src="./Images/10.jpg" alt="[Your Girlfriend's Name]">
         </div>
       </div>
     </section>
@@ -60,7 +106,7 @@
       </div>
     </section>
     <section id="guestbook">
-      <div class="container">
+      <div class="container4">
         <h2>Guestbook</h2>
         <div class="guestbook-form">
           <form id="guestbook-form">
@@ -88,7 +134,7 @@
   </main>
 
   <footer>
-    <div class="container">
+    <div class="container7">
       <p>&copy; 2023 [Akash]. All rights reserved.</p>
     </div>
   </footer>
