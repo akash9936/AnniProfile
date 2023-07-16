@@ -69,10 +69,11 @@
     <section id="about">
       <div class="container3">
         <h2>
+          <div id="hiddenText" style="display: none;">
           <p id="NewV">My Love, Anni</p>
 
           <p>On this special day, I want to take a moment to express the things I absolutely adore about you.</p>
-
+          
           <p>love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.</p> 
           
           <p>The sweet things you say never fail to melt my heart, leaving me feeling cherished and loved in ways I never knew were possible.</p>
@@ -88,13 +89,29 @@
           <p>Even when we're physically apart, your love reaches me from afar, as if your love and care carries the strength of our connection across the miles.</p>
           
           <p>Happy Birthday, my innocent love.</p>
-          
+          </div>
+          <label for="password">Enter Password to see Message :</label>
+      <input type="password" id="password" />
           </h2>
         <div class="about-content">
           <img src="./Images/10.jpg" alt="[Your Girlfriend's Name]">
         </div>
       </div>
     </section>
+
+    <script>
+      const passwordInput = document.getElementById("password");
+      const hiddenText = document.getElementById("hiddenText");
+    
+      passwordInput.addEventListener("input", function() {
+        if (passwordInput.value === "SweetAkash") {
+          hiddenText.style.display = "block";
+        } else {
+          hiddenText.style.display = "none";
+        }
+      });
+    </script>
+
     <section id="gallerys">
       <div class="container">
         <h2>Photo Gallery</h2>
