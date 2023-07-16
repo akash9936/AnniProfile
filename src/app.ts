@@ -1,24 +1,24 @@
 
 
-// Define an array of colors
-const colors: string[] = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF"];
+// // Define an array of colors
+// const colors: string[] = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF"];
 
-// Function to change the website color
-function changeWebsiteColor(): void {
-  // Generate a random index to select a color from the array
-  const randomIndex: number = Math.floor(Math.random() * colors.length);
+// // Function to change the website color
+// function changeWebsiteColor(): void {
+//   // Generate a random index to select a color from the array
+//   const randomIndex: number = Math.floor(Math.random() * colors.length);
 
-  // Get the <body> element or any other element you want to change the color of
-  const bodyElement: HTMLElement | null = document.body;
+//   // Get the <body> element or any other element you want to change the color of
+//   const bodyElement: HTMLElement | null = document.body;
 
-  // Set the background color to the randomly selected color
-  if (bodyElement) {
-    bodyElement.style.backgroundColor = colors[randomIndex];
-  }
-}
+//   // Set the background color to the randomly selected color
+//   if (bodyElement) {
+//     bodyElement.style.backgroundColor = colors[randomIndex];
+//   }
+// }
 
-// Call the changeWebsiteColor function every 1 second
-setInterval(changeWebsiteColor, 1000);
+// // Call the changeWebsiteColor function every 1 second
+// setInterval(changeWebsiteColor, 1000);
 
 interface GuestbookMessage {
     name?: string;
