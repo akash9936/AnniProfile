@@ -1,0 +1,27 @@
+{
+  "name": "anniprofile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "server": "node dist/bin/www.js",
+    "build": "npm run build-ts && npm run copy-static-assets",
+    "test": "mocha",
+    "build-ts": "tsc",
+    "copy-static-assets": "node copyStaticAssets.js",
+    "format": "prettier --write \"./**/*.{ts,js,json}\" && npm run lint:fix",
+    "lint": "eslint --ignore-path .gitignore --ext .ts src/",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "author": "Akash Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0",
+    "jshint": "^2.13.6",
+    "shelljs": "^0.8.5"
+  }
+}

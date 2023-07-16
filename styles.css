@@ -1,0 +1,152 @@
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f5ff; 
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #ceb5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Styles */
+
+nav {
+  /* Add your navigation styles here */
+}
+
+/* Main Styles */
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Home Section Styles */
+
+#home {
+  text-align: center;
+}
+
+#home .container {
+  padding: 40px;
+}
+
+#home h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#home img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* Gallery Section Styles */
+
+#gallery .container,
+#gallerys .container,
+#about .container,
+#guestbook .container,
+#contact .container {
+  text-align: center;
+}
+
+#gallery h2,
+#gallerys .h2,
+#about h2,
+#guestbook h2,
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery,
+.gallerys,
+.about-content,
+.guestbook-form form,
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallerys {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo {
+  margin: 10px;
+  text-align: center;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.photo p {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Guestbook Section Styles */
+
+.guestbook-form,
+.guestbook-messages {
+  margin-bottom: 20px;
+}
+
+.guestbook-form button,
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#audio-player {
+    width: 300px;
+    height: 50px;
+    background-color: #a5f6f5;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #audio-player audio {
+    width: 100%;
+  }
+  
+  #audio-player button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
