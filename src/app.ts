@@ -61,7 +61,7 @@ interface GuestbookMessage {
       timestamp: '2023-07-08 10:00:00'
     },
     {
-      name: 'Jane Smith',
+      name: 'Akash Singh 2',
       content: 'Nice website! Happy birthday to your girlfriend.',
       timestamp: '2023-07-01 19:30:00'
     },
