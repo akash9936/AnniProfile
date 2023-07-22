@@ -53,33 +53,7 @@
     <section id="gallery">
       <div class="container2">
         <h2>Sweetheart, this photo gallery is a celebration of your beauty and the way you light up my world.</h2>
-        <div class="gallery">
-          <div class="photo">
-            <img src="./Images/14.jpg" alt="Photo 1" onclick="showImage('./Images/13.jpg', 'Caption 1')">
-            <p>Happy Birthday to my cute baby </p>
-          </div>
-          <div class="photo">
-            <img src="./Images/13.jpg" alt="Photo 2">
-            <p>On this special day, I want to take a moment to express the things I absolutely adore about you.</p>
-          </div>
-          <div class="photo">
-            <img src="./Images/13.jpg" alt="Photo 2">
-            <p>love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.</p>
-          </div>
-          <div class="photo">
-            <img src="./Images/12.jpg" alt="Photo 2">
-            <p>The sweet things you say never fail to melt my heart, leaving me feeling cherished and loved in ways I never knew were possible.</p>
-          </div>
-          <div class="photo">
-            <img src="./Images/11.jpg" alt="Photo 2">
-            <p>The way you tease me with a mischievous smile brings a sense of playful joy to our relationship, keeping the sparks alive.</p>
-          </div>
-          <div class="photo">
-            <img src="./Images/10.jpg" alt="Photo 2">
-            <p>I appreciate the effort you put into making lists and planning conversations, showing just how much you value our connection.</p>
-          </div>
-          <div class="gallery" id="photoGallery">
-          </div>
+        <div class="gallery" id="photoGallery">
         </div>
         <div id="lightbox">
           <span class="close" onclick="closeLightbox()">&times;</span>
@@ -87,6 +61,90 @@
           <p id="lightbox-caption"></p>
         </div>
       </div>
+      <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+      </div>
+      <script>
+        // Photo data
+        const photos = [
+          {
+            src: "./Images/14.jpg",
+            alt: "Photo 1",
+            caption: "Happy Birthday to my cute baby.",
+          },
+          {
+            src: "./Images/13.jpg",
+            alt: "Photo 2",
+            caption: "On this special day, I want to take a moment to express the things I absolutely adore about you.",
+          },
+          {
+            src: "./Images/12.jpg",
+            alt: "Photo 2",
+            caption: "Love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.",
+          },
+
+          {
+            src: "./Images/11.jpg",
+            alt: "Photo 2",
+            caption: "Love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.",
+          },
+
+          {
+            src: "./Images/12.jpg",
+            alt: "Photo 2",
+            caption: "Love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.",
+          },
+          // Add more photo data as needed
+        ];
+      
+        // Function to show the full-screen image
+        function showImage(src, caption) {
+          const overlay = document.getElementById('lightbox');
+          const imgElement = document.getElementById('lightbox-img');
+          const captionElement = document.getElementById('lightbox-caption');
+      
+          imgElement.src = src;
+          captionElement.textContent = caption;
+          overlay.style.display = 'flex';
+        }
+      
+        // Function to close the full-screen image
+        function closeLightbox() {
+          const overlay = document.getElementById('lightbox');
+          overlay.style.display = 'none';
+        }
+      
+        // Function to create the photo gallery
+        function createGallery() {
+          const galleryContainer = document.getElementById('photoGallery');
+      
+          photos.forEach((photo, index) => {
+            const photoDiv = document.createElement('div');
+            photoDiv.classList.add('photo');
+      
+            const imgElement = document.createElement('img');
+            imgElement.src = photo.src;
+            imgElement.alt = photo.alt;
+            imgElement.onclick = function () {
+              showImage(photo.src, photo.caption);
+            };
+      
+            const captionElement = document.createElement('p');
+            captionElement.textContent = photo.caption;
+      
+            photoDiv.appendChild(imgElement);
+            photoDiv.appendChild(captionElement);
+      
+            galleryContainer.appendChild(photoDiv);
+          });
+        }
+      
+        // Call the function to create the gallery
+        createGallery();
+      </script>
+            
     </section>
 
     <section id="about">
