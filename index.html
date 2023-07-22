@@ -55,11 +55,7 @@
         <h2>Sweetheart, my baby this photo gallery is a celebration of your beauty and the way you light up my world.</h2>
         <div class="gallery" id="photoGallery">
         </div>
-        <div id="lightbox">
-          <span class="close" onclick="closeLightbox()">&times;</span>
-          <img id="lightbox-img" src="" alt="">
-          <p id="lightbox-caption"></p>
-        </div>
+     
       </div>
       <div id="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
@@ -114,6 +110,7 @@
         function closeLightbox() {
           const overlay = document.getElementById('lightbox');
           overlay.style.display = 'none';
+          overlay.style.alignContent = center;
         }
       
         // Function to create the photo gallery
