@@ -67,7 +67,7 @@ interface GuestbookMessage {
     },
     {
       name: 'Jane Smithaaaaaa',
-      content: 'Nice websiteaaaaaaaaa! Happy birthday to your girlfriend.',
+      content: 'Nice websiteaaaaaaaaa....! Happy birthday to your girlfriend.',
       timestamp: '2023-07-01 19:30:00'
     },
     // Add more messages as needed

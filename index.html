@@ -44,7 +44,9 @@
     <section id="home">
       <div class="container1">
         <h1>Happy Birthday, Anni!</h1>
-        <img src="./Images/16.png" alt="[Anni]">
+        <div class="profilepic">
+          <img src="./Images/16.png" alt="[Anni]">
+        </div>
       </div>
     </section>
 
@@ -53,15 +55,36 @@
         <h2>Sweetheart, this photo gallery is a celebration of your beauty and the way you light up my world.</h2>
         <div class="gallery">
           <div class="photo">
-            <img src="./Images/14.jpg" alt="Photo 1">
-            <p>Love quote 1</p>
+            <img src="./Images/14.jpg" alt="Photo 1" onclick="showImage('./Images/13.jpg', 'Caption 1')">
+            <p>Happy Birthday to my cute baby </p>
           </div>
           <div class="photo">
             <img src="./Images/13.jpg" alt="Photo 2">
-            <p>Love quote 2</p>
+            <p>On this special day, I want to take a moment to express the things I absolutely adore about you.</p>
+          </div>
+          <div class="photo">
+            <img src="./Images/13.jpg" alt="Photo 2">
+            <p>love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.</p>
+          </div>
+          <div class="photo">
+            <img src="./Images/12.jpg" alt="Photo 2">
+            <p>The sweet things you say never fail to melt my heart, leaving me feeling cherished and loved in ways I never knew were possible.</p>
+          </div>
+          <div class="photo">
+            <img src="./Images/11.jpg" alt="Photo 2">
+            <p>The way you tease me with a mischievous smile brings a sense of playful joy to our relationship, keeping the sparks alive.</p>
+          </div>
+          <div class="photo">
+            <img src="./Images/10.jpg" alt="Photo 2">
+            <p>I appreciate the effort you put into making lists and planning conversations, showing just how much you value our connection.</p>
           </div>
           <div class="gallery" id="photoGallery">
           </div>
+        </div>
+        <div id="lightbox">
+          <span class="close" onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-img" src="" alt="">
+          <p id="lightbox-caption"></p>
         </div>
       </div>
     </section>
@@ -104,7 +127,7 @@
       const hiddenText = document.getElementById("hiddenText");
     
       passwordInput.addEventListener("input", function() {
-        if (passwordInput.value === "SweetAkash") {
+        if (passwordInput.value === "LoveFromAkash") {
           hiddenText.style.display = "block";
         } else {
           hiddenText.style.display = "none";
@@ -137,7 +160,11 @@
           </form>
           <script>"./dist/src/one.js"</script>
         </div>
-        <audio id="background-music" src="./Images/1.mp3" autoplay loop controls></audio>
+        <audio id="background-music" src="./Images/1.mp3" 
+        
+        
+        ></audio>
+<!-- 'autoplay loop controls' above audio -->
 
         <div class="guestbook-messages">
           <!-- Display guestbook messages dynamically using JavaScript or TypeScript -->
@@ -148,6 +175,22 @@
       <h2>Guestbook</h2>
       <ul id="message-list"></ul>
     </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul id="message-list"></ul>
+      
+      <!-- Facebook and Instagram Links -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/your-facebook-page" target="_blank">
+          <img src="facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/your-instagram-page" target="_blank">
+          <img src="instagram-icon.png" alt="Instagram">
+        </a>
+      </div>
+      
+    </section>
+    
   </main>
 
   <footer>
