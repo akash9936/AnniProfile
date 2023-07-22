@@ -55,6 +55,11 @@
         <h2>Sweetheart, this photo gallery is a celebration of your beauty and the way you light up my world.</h2>
         <div class="gallery" id="photoGallery">
         </div>
+        <div id="lightbox">
+          <span class="close" onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-img" src="" alt="">
+          <p id="lightbox-caption"></p>
+        </div>
       </div>
       <div id="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
@@ -67,7 +72,7 @@
           {
             src: "./Images/14.jpg",
             alt: "Photo 1",
-            caption: "Happy Birthday to my cute baby",
+            caption: "Happy Birthday to my cute baby.",
           },
           {
             src: "./Images/13.jpg",
