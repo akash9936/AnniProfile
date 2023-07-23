@@ -11,6 +11,7 @@
     }
   </style>
 </head>
+
 <body>
   <script>
     function getRandomColor() {
@@ -27,6 +28,7 @@
     }, 1000);
   </script>
 </body>
+
 <body>
   <header>
     <div class="top-bar"></div>
@@ -43,7 +45,7 @@
   <main>
     <section id="home">
       <div class="container1">
-        <h1>Happy Birthday, Anni!</h1>
+        <h1>Happy Birthday my love, Anni!</h1>
         <div class="profilepic">
           <img src="./Images/16.png" alt="[Anni]">
         </div>
@@ -52,10 +54,10 @@
 
     <section id="gallery">
       <div class="container2">
-        <h2>Sweetheart, my baby this photo gallery is a celebration of your beauty and the way you light up my world.</h2>
+        <h2>My sweet baby, this photo gallery is a celebration of your timeless beauty, inside and out. 📸💖</h2>
         <div class="gallery" id="photoGallery">
         </div>
-     
+
       </div>
       <div id="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
@@ -66,114 +68,188 @@
         // Photo data
         const photos = [
           {
-            src: "./Images/14.jpg",
+            src: "./Images/2.JPEG",
             alt: "Photo 1",
-            caption: "Happy Birthday to my cute baby.",
+            caption: "You are absolutely breathtaking in this photo! 😍✨",
           },
           {
-            src: "./Images/13.jpg",
+            src: "./Images/4.jpg",
             alt: "Photo 2",
-            caption: "On this special day, I want to take a moment to express the things I absolutely adore about you.",
+            caption: "You have such a radiant smile that brightens up my day! 😄💕",
           },
           {
-            src: "./Images/12.jpg",
+            src: "./Images/5.jpg",
             alt: "Photo 2",
-            caption: "Love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.",
+            caption: "Every time I see a picture of you, I fall in love all over again! 🥰💘",
+          },
+
+          {
+            src: "./Images/6.jpg",
+            alt: "Photo 2",
+            caption: "This photo showcases your inner and outer beauty flawlessly! 🌹✨",
+          },
+
+          {
+            src: "./Images/7.jpg",
+            alt: "Photo 2",
+            caption: "Your eyes are like deep pools of wonder; they tell a story all on their own! 🌊✨",
+          },
+
+          {
+            src: "./Images/8.jpg",
+            alt: "Photo 2",
+            caption: "You have such a captivating presence; it's impossible to take my eyes off you! 🔥💫 ",
+          },
+
+          {
+            src: "./Images/9.jpg",
+            alt: "Photo 2",
+            caption: "You're the definition of beauty and grace, and this photo proves it! 😊🌺",
+          },
+
+          {
+            src: "./Images/10.jpg",
+            alt: "Photo 2",
+            caption: "You shine like a ray of sunshine in this photo! ☀️💛 ",
           },
 
           {
             src: "./Images/11.jpg",
             alt: "Photo 2",
-            caption: "Love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.",
+            caption: "You've got that radiant glow, and this saari accentuates it perfectly! ✨💛",
           },
 
           {
             src: "./Images/12.jpg",
             alt: "Photo 2",
-            caption: "Love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.",
+            caption: "Your face is a work of art! 🎨💛 Absolutely stunning! 😍",
           },
-          // Add more photo data as needed
+
+          {
+            src: "./Images/13.jpg",
+            alt: "Photo 2",
+            caption: "You have a way of making every moment look magical, just like this photo! 🌈✨",
+          },
+
+          {
+            src: "./Images/14.jpg",
+            alt: "Photo 2",
+            caption: "In your radiant face, I see a love that embraces the world with a warm and tender glow! 😍💛",
+          },
         ];
-      
+
         // Function to show the full-screen image
         function showImage(src, caption) {
           const overlay = document.getElementById('lightbox');
           const imgElement = document.getElementById('lightbox-img');
           const captionElement = document.getElementById('lightbox-caption');
-      
+
           imgElement.src = src;
           captionElement.textContent = caption;
           overlay.style.display = 'flex';
         }
-      
+
         // Function to close the full-screen image
         function closeLightbox() {
           const overlay = document.getElementById('lightbox');
           overlay.style.display = 'none';
           overlay.style.alignContent = center;
         }
-      
+
         // Function to create the photo gallery
         function createGallery() {
           const galleryContainer = document.getElementById('photoGallery');
-      
+
           photos.forEach((photo, index) => {
             const photoDiv = document.createElement('div');
             photoDiv.classList.add('photo');
-      
+
             const imgElement = document.createElement('img');
             imgElement.src = photo.src;
             imgElement.alt = photo.alt;
             imgElement.onclick = function () {
               showImage(photo.src, photo.caption);
             };
-      
+
             const captionElement = document.createElement('p');
             captionElement.textContent = photo.caption;
-      
+
             photoDiv.appendChild(imgElement);
             photoDiv.appendChild(captionElement);
-      
+
             galleryContainer.appendChild(photoDiv);
           });
         }
-      
+
         // Call the function to create the gallery
         createGallery();
       </script>
-            
+
     </section>
 
     <section id="about">
       <div class="container3">
         <h2>
           <div id="hiddenText" style="display: none;">
-          <p id="NewV">My Love, Anni</p>
 
-          <p>On this special day, I want to take a moment to express the things I absolutely adore about you.</p>
-          
-          <p>love the way your eyes light up when I say something silly or admire your cuteness, making even the most ordinary moments feel magical.</p> 
-          
-          <p>The sweet things you say never fail to melt my heart, leaving me feeling cherished and loved in ways I never knew were possible.</p>
-          
-          <p>The way you tease me with a mischievous smile brings a sense of playful joy to our relationship, keeping the sparks alive.</p>
-          
-          <p>I appreciate the effort you put into making lists and planning conversations, showing just how much you value our connection.</p>
-          
-          <p>Your sense of humor is a constant source of delight, brightening even the dullest of days with your quick wit and clever jokes.</p>
-          
-          <p>The way you make me feel is beyond words; it's a feeling of contentment, joy, and a love that knows no bounds.</p>
-          
-          <p>Even when we're physically apart, your love reaches me from afar, as if your love and care carries the strength of our connection across the miles.</p>
-          
-          <p>Happy Birthday, my innocent love.</p>
+            <p>My Dearest Anni,</p>
+            <p>To the woman who makes every day feel like a celebration, Happy Birthday! 🎉🎈.</p>
+            <p>Another year of love and laughter, and here I am, penning down my love for you once again in this letter.
+            </p>
+            <p>You know how you believed the moon followed you around wherever you went during your childhood? Well,
+              being with you feels just like that to me. You bring so much happiness and magic into my life, just like
+              the stars in the night sky.</p>
+            <p>Speaking of magic, do you remember that time we joked about giving Hajmola to a shark fish to distract it
+              from killing you (Your Sea anxiety)?
+            <p>Your sense of humour always makes me laugh, and your creativity never ceases to amaze me. It's these
+              little moments that make our bond so unique and special and it force me to say hmm hmm in our conversation
+              (Boring me).</p>
+            <p>You know, I cherish every moment we spend together, whether it's talking, laughing, or even being silly
+              with earphones around your neck while taking a bath! You bring so much joy and warmth into my life, and I
+              am truly grateful for every second we share.</p>
+            <p>I must admit, my love, that I can't help but dive into the ocean of your emotions and get lost in its
+              endless beauty. You've got me sailing through your heart like a fearless pirate, and I never want to reach
+              the shore because your love is my treasure and my destination.</p>
+            <p>And as for those who think love is only about appearances, they clearly don't understand the true essence
+              of our bond. It's not about faces or fleeting moments; it's about the love in your words, the love in your
+              voice, and the love that surrounds us when we're together. How could I ever forget those feelings, They
+              are stick in my heart forever.</p>
+            <p>So, my love, as we celebrate your birthday today, I want you to know that you are the most extraordinary
+              person I've ever met. You are my moon, my stars, and my everything. With you, life feels like a beautiful
+              journey, filled with love and laughter.</p>
+            <p>Thank you for being in my life, for being my confidante, my happy world, and my best friend. You mean the
+              world to me, and I promise to cherish, adore, and love you with all my heart, today and always.</p>
+            <p>Here's to you, my extraordinary Super-Heroine of a partner! Happy Birthday, my love.</p>
+            <p>With all my love,</p>
+            <p style="color: red; font-size: 50px; position: left;">AKASH SINGH</p>
           </div>
-          <label for="password">Enter Password to see Message :</label>
-      <input type="password" id="password" />
-          </h2>
+          <style>
+            label {
+              font-size: 18px;
+              color: #333;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+          
+            input[type="password"] {
+              max-width: 200px;
+              padding: 8px;
+              border: 1px solid rgb(202, 183, 183);
+              background-color: antiquewhite;
+              border-radius: 5px;
+              font-size: 16px;
+              outline: none;
+            }
+          </style>
+          <label for="password">Enter password and reveal the secrets of my thoughts: </label>
+          <p style="  font-size: 10px;">hint: My fav color and pet name</p>
+          <input style="max-width: 60px;" type="password" id="password" placeholder="password" />
+        </h2>
         <div class="about-content">
-          <img src="./Images/10.jpg" alt="[Your Girlfriend's Name]">
-              <div style="color: red; font-size: 50px; position: left;" class="overlay-caption">ANNI SINGH</div>
+          <img style="max-width: 960px;
+          margin: 0 auto;
+          padding: 20px;" src="./Images/3.jpg" alt="Anni">
+          <div style="color: red; font-size: 50px; position: left;" class="overlay-caption">ANNI SINGH</div>
         </div>
       </div>
     </section>
@@ -181,9 +257,9 @@
     <script>
       const passwordInput = document.getElementById("password");
       const hiddenText = document.getElementById("hiddenText");
-    
-      passwordInput.addEventListener("input", function() {
-        if (passwordInput.value === "LoveFromAkash") {
+
+      passwordInput.addEventListener("input", function () {
+        if (passwordInput.value === "redtoto") {
           hiddenText.style.display = "block";
         } else {
           hiddenText.style.display = "none";
@@ -191,16 +267,7 @@
       });
     </script>
 
-    <section id="gallerys">
-      <div class="container">
-        <h2>Photo Gallery</h2>
-        <div class="gallerys" id="photoGallerys">
-          <p>*****************************not available.</p>
-       
-          <!-- Photo elements will be dynamically added here -->
-        </div>
-      </div>
-    </section>
+
     <section id="guestbook">
       <div class="container4">
         <h2>Guestbook</h2>
@@ -216,11 +283,8 @@
           </form>
           <script>"./dist/src/one.js"</script>
         </div>
-        <audio id="background-music" src="./Images/1.mp3" 
-        
-        
-        ></audio>
-<!-- 'autoplay loop controls' above audio -->
+        <audio id="background-music" src="./Images/1.mp3"></audio>
+        <!-- 'autoplay loop controls' above audio -->
 
         <div class="guestbook-messages">
           <!-- Display guestbook messages dynamically using JavaScript or TypeScript -->
@@ -234,19 +298,20 @@
     <section id="contact">
       <h2>Contact</h2>
       <ul id="message-list"></ul>
-      
+
       <!-- Facebook and Instagram Links -->
       <div class="social-links">
-        <a href="https://www.facebook.com/your-facebook-page" target="_blank">
-          <img src="facebook-icon.png" alt="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=100004069842071" target="_blank">
+          <img src="./Images/fb.png" alt="Facebook">
         </a>
-        <a href="https://www.instagram.com/your-instagram-page" target="_blank">
-          <img src="instagram-icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/Singhani555/?fbclid=IwAR2YmXQKkAknHAW60tIvXrsFP8yOPB7DkzgIYHYkD1vMfcKMnqeena29ycI"
+          target="_blank">
+          <img src="./Images/insta.jpeg" alt="Instagram">
         </a>
       </div>
-      
+
     </section>
-    
+
   </main>
 
   <footer>

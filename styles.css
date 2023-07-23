@@ -112,6 +112,8 @@ section {
 #social-links h2 {
   font-size: 24px;
   margin-bottom: 20px;
+    display: flex;
+  flex-direction: column;
 
 }
 
@@ -189,7 +191,6 @@ section {
   margin-top: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
-
 }
 
 .photo p:hover {
@@ -281,32 +282,13 @@ section {
   }
 
 
-  .social-links {
-
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+ 
   
   .guestbook-messages:hover,
   .photo:hover,
   .social-links:hover {
     background-color: #aac8e7;
   }
-  
-  .social-links[disabled] {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  
-  .social-links img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
-
  
   /* Add styles for the lightbox */
   #lightbox {
@@ -356,3 +338,29 @@ section {
     cursor: pointer;
     color: #fff;
   }
+
+  /* Social buttons
+  /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Section Styles */
+#contact {
+  
+  text-align: left;
+}
+/* Social Links Styles */
+
+
+.social-links img {
+  width: 80px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
