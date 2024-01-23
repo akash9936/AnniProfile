@@ -10,6 +10,7 @@
       transition: background-color 0.5s ease-in-out;
     }
   </style>
+   <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -190,82 +191,35 @@
     <section id="about">
       <div class="container3">
         <h2>
-          <div id="hiddenText" style="display: none;">
-
-            <p>My Dearest Anni,</p>
-            <p>To the woman who makes every day feel like a celebration, Happy Birthday! 🎉🎈.</p>
-            <p>Another year of love and laughter, and here I am, penning down my love for you once again in this letter.
-            </p>
-            <p>You know how you believed the moon followed you around wherever you went during your childhood? Well,
-              being with you feels just like that to me. You bring so much happiness and magic into my life, just like
-              the stars in the night sky.</p>
-            <p>Speaking of magic, do you remember that time we joked about giving Hajmola to a shark fish to distract it
-              from killing you (Your Sea anxiety)?
-            <p>Your sense of humour always makes me laugh, and your creativity never ceases to amaze me. It's these
-              little moments that make our bond so unique and special and it force me to say hmm hmm in our conversation
-              (Boring me).</p>
-            <p>You know, I cherish every moment we spend together, whether it's talking, laughing, or even being silly
-              with earphones around your neck while taking a bath! You bring so much joy and warmth into my life, and I
-              am truly grateful for every second we share.</p>
-            <p>I must admit, my love, that I can't help but dive into the ocean of your emotions and get lost in its
-              endless beauty. You've got me sailing through your heart like a fearless pirate, and I never want to reach
-              the shore because your love is my treasure and my destination.</p>
-            <p>And as for those who think love is only about appearances, they clearly do not understand the true essence
-              of our bond. It's not about faces or fleeting moments; it's about the love in your words, the love in your
-              voice, and the love that surrounds us when we're together. How could I ever forget those feelings, They
-              are stick in my heart forever.</p>
-            <p>So, my love, as we celebrate your birthday today, I want you to know that you are the most extraordinary
-              person I've ever met. You are my moon, my stars, and my everything. With you, life feels like a beautiful
-              journey, filled with love and laughter.</p>
-            <p>Thank you for being in my life, for being my confidante, my happy world, and my best friend. You mean the
-              world to me, and I promise to cherish, adore, and love you with all my heart, today and always.</p>
-            <p>Here's to you, my extraordinary Super-Heroine of a partner! Happy Birthday, my love.</p>
-            <p>With all my love,</p>
-            <p style="color: red; font-size: 25px; position: left;">AKASH SINGH</p>
-          </div>
-          <style>
-            label {
-              font-size: 18px;
-              color: #333;
-              font-weight: bold;
-              margin-bottom: 10px;
-            }
-          
-            input[type="password"] {
-              max-width: 200px;
-              padding: 8px;
-              border: 1px solid rgb(202, 183, 183);
-              background-color: antiquewhite;
-              border-radius: 5px;
-              font-size: 16px;
-              outline: none;
-            }
-          </style>
-          <label for="password">Enter password and reveal the secrets of my thoughts: </label>
-          <p style="  font-size: 10px;">hint: My fav color and pet name</p>
-          <input style="max-width: 60px;" type="password" id="password" placeholder="password" />
+          <div id="hiddenText"></div>
         </h2>
-        <div class="about-content">
-          <img style="max-width: 960px;
-          margin: 0 auto;
-          padding: 20px;" src="./Images/3.jpg" alt="Anni">
-          <div style="color: red; font-size: 50px; position: left;" class="overlay-caption">ANNI SINGH</div>
-        </div>
+        <style>
+          label {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+  
+          input[type="password"] {
+            max-width: 200px;
+            padding: 8px;
+            border: 1px solid rgb(202, 183, 183);
+            background-color: antiquewhite;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+          }
+        </style>
+        <label for="password">Enter password and reveal the secrets of my thoughts: </label>
+        <p style="font-size: 10px;">hint: My fav color and pet name</p>
+        <input style="max-width: 60px;" type="password" id="password" placeholder="password" />
+      </div>
+      <div class="about-content">
+        <img style="max-width: 960px; margin: 0 auto; padding: 20px;" src="./Images/3.jpg" alt="Anni">
+        <div style="color: red; font-size: 50px; position: left;" class="overlay-caption">ANNI SINGH</div>
       </div>
     </section>
-
-    <script>
-      const passwordInput = document.getElementById("password");
-      const hiddenText = document.getElementById("hiddenText");
-
-      passwordInput.addEventListener("input", function () {
-        if (passwordInput.value === "redtoto") {
-          hiddenText.style.display = "block";
-        } else {
-          hiddenText.style.display = "none";
-        }
-      });
-    </script>
 
 
     <section id="guestbook">
@@ -276,7 +230,7 @@
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="message">Birthday Message:</label>
+            <label for="message">Birthday Message:  </label>
             <textarea id="message" name="message" required></textarea>
 
             <button type="submit">Submit</button>
@@ -286,7 +240,6 @@
 
         <div id="audio-player">
           <audio id="background-music" src="./Images/1.mp3" autoplay loop controls volume="0.5"></audio>
-          
         </div>
         
         <!-- 'autoplay loop controls' above audio -->

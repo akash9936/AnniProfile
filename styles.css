@@ -161,7 +161,7 @@ section {
 }
 
 .photo img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   border: 3px solid #e2e1b6;
 
 }
