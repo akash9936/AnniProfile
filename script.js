@@ -2,6 +2,31 @@
 
 // Letter content stored in a variable
 const letterContent = `
+<p>14 Feb 2024,</p>
+<p>Happy Valentine's Day! ❤️</p>
+
+<p>Through this Valentine's letter, I want to express how seeing you again after two years felt like a streak I couldn't wait to end. But that moment was just as magical as the first time I saw you at the station—it was like discovering a whole new level of beauty. Maybe we need to invent a whole new language just to capture how truly stunning you are because I find myself unable to express it in any known language. ✨</p>
+
+<p>You're my personal sunshine ☀️, brightening every moment, whether we're together or apart. Your smile is like a dazzling firework 🎆, and I find myself reaching for sunglasses. 🕶️</p>
+
+<p>And let's talk about your superhero powers. Your adeptness at handling life's challenges is truly impressive, facing challenges with a smile. Prepping for those competition exams. You're like my cute ninja 🥷 preparing for a mission. I've got your back, my partner for life. We're in this together. 💪</p>
+
+<p>You've got this hilarious theory that the full moon shines just for you because you're convinced you're the moon's long-lost twin. And you know what? I'm starting to entertain the idea myself. 🌕</p>
+
+<p>I have realized with time that everything feels good at its own time, but you're the one who always gives me that comforting feeling of love and care, even when we have our little disagreements. ❤️</p>
+
+<p>You may tease yourself as a Pentium processor, but in my book, you're more of a next-gen AI—always dishing out hilarious yet spot-on replies and throwing in some life advice along the way like a wise, digital guru. 🤖</p>
+
+<p>Now that I've unlocked the mysteries of love, I understand it's not about counting the days or years we've shared. It's about adoring you more than my irresistible urge for chicken biryani—and believe me, that's a big deal! So here's to loving you more and more, my delightful chicken nugget! 🍗</p>
+
+<p>Happy Valentine’s Day my Love! ❤️</p>
+
+<p>Your Handsome 😊</p>
+
+
+
+<hr> <!-- Adding a horizontal line to separate the two letters -->
+
   <p>25 July 2023</>
   <p>My Dearest Anni,</p>
   <p>To the woman who makes every day feel like a celebration, Happy Birthday! 🎉🎈.</p>
@@ -105,7 +130,7 @@ function handlePasswordInput() {
     if (passwordInput.value === "redtoto") {
       hiddenText.innerHTML = letterContent; // Show the letter content
     } else {
-      hiddenText.innerHTML = letterContent; // Hide the letter content
+      hiddenText.innerHTML = ""; // Hide the letter content
     }
   });
 }

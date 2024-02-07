@@ -15,6 +15,10 @@
 
 <body>
   <script>
+    window.onload = function() {
+    document.getElementById("background-music").volume = 0.2;
+};
+
     function getRandomColor() {
       const letters = 'ABCDEF';
       let color = '#';
@@ -55,7 +59,7 @@
 
     <section id="gallery">
       <div class="container2">
-        <h2>My sweet baby, this photo gallery is a celebration of your timeless beauty, inside and out. 📸💖</h2>
+        <h2>My love, each image in this gallery speaks volumes about your dynamic cuteness, reminding me why I fall in love with you all over again every time I see them. 📸💖</h2>
         <div class="gallery" id="photoGallery">
         </div>
 
@@ -72,57 +76,57 @@
           {
             src: "./Images/6_1.jpeg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "Since meeting you, I've found my home in your arms and my destiny in your eyes! 😍✨",
           },
           {
             src: "./Images/4_1.jpg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "Your hair flows like a gentle waterfall, framing a face so mesmerizing, it leaves me speechless! 😍✨",
           },
           {
             src: "./Images/5_1.jpg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "You have a way of making every dress look like it was made just for you! 😍✨",
           },
           {
             src: "./Images/7_1.jpg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "Your innocence in this photo is like a breath of fresh air, filling me with joy and wonder every time I see it! 😍✨",
           },
           {
             src: "./Images/9_1.JPG",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "The care and affection you show your pets is unparalleled,  a true demonstration of your loving nature! ✨",
           },
           {
             src: "./Images/10_1.jpeg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "I'm continually amazed by the depth and richness of your personality, which makes every moment with you unforgettable! 😍✨",
           },
           {
             src: "./Images/11_1.jpg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "In your traditional attire, you're a breathtaking sight, turning heads and stealing hearts wherever you go! 😍✨",
           },
           {
             src: "./Images/12_1.jpg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: `In this picture's backdrop, it's whispered: "You are exactly where you need to be" And every glance at you confirms you're where I belong! 😍✨`,
           },
           {
             src: "./Images/13_1.jpg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "In every pixel of this photo, you're a masterpiece painted by the hands of the divine! 😍✨",
           },
-          {
-            src: "./Images/14_1.jpeg",
-            alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
-          },
+       //   {
+       //     src: "./Images/14_1.jpeg",
+       //     alt: "Photo 1",
+       //     caption: "You are absolutely breathtaking in this photo! 😍✨",
+       //   },
           {
             src: "./Images/3_1.png",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "Your love gives me wings, lifting me up and carrying me through life's journey! 😍✨",
           },
           {
             src: "./Images/4.jpg",
@@ -272,7 +276,7 @@
         <input style="max-width: 60px;" type="password" id="password" placeholder="password" />
       </div>
       <div class="about-content">
-        <img style="max-width: 960px; margin: 0 auto; padding: 20px;" src="./Images/3.jpg" alt="Anni">
+        <img style="max-width: 560px; margin: 0 auto; padding: 20px;" src="./Images/bottomCover.jpg" alt="Anni">
         <div style="color: red; font-size: 50px; position: left;" class="overlay-caption">ANNI SINGH</div>
       </div>
     </section>
@@ -295,7 +299,7 @@
         </div>
 
         <div id="audio-player">
-          <audio id="background-music" src="./Images/1.mp3" autoplay loop controls volume="0.5"></audio>
+          <audio id="background-music" src="./Images/song.mp3" autoplay loop controls volume="0.2"></audio>
         </div>
         
         <!-- 'autoplay loop controls' above audio -->
