@@ -15,6 +15,10 @@
 
 <body>
   <script>
+    window.onload = function() {
+    document.getElementById("background-music").volume = 0.2;
+};
+
     function getRandomColor() {
       const letters = 'ABCDEF';
       let color = '#';
@@ -48,14 +52,14 @@
       <div class="container1">
         <h1>Happy Birthday my love, Anni!</h1>
         <div class="profilepic">
-          <img src="./Images/16.png" alt="[Anni]">
+          <img src="./Images/proV7.jpeg" alt="[Anni]">
         </div>
       </div>
     </section>
 
     <section id="gallery">
       <div class="container2">
-        <h2>My sweet baby, this photo gallery is a celebration of your timeless beauty, inside and out. 📸💖</h2>
+        <h2>My love, each image in this gallery speaks volumes about your dynamic cuteness, reminding me why I fall in love with you all over again every time I see them. 📸💖</h2>
         <div class="gallery" id="photoGallery">
         </div>
 
@@ -68,21 +72,72 @@
       <script>
         // Photo data
         const photos = [
+       
           {
-            src: "./Images/2.JPEG",
+            src: "./Images/6_1.jpeg",
             alt: "Photo 1",
-            caption: "You are absolutely breathtaking in this photo! 😍✨",
+            caption: "Since meeting you, I've found my home in your arms and my destiny in your eyes! 😍✨",
+          },
+          {
+            src: "./Images/4_1.jpg",
+            alt: "Photo 1",
+            caption: "Your hair flows like a gentle waterfall, framing a face so mesmerizing, it leaves me speechless! 😍✨",
+          },
+          {
+            src: "./Images/5_1.jpg",
+            alt: "Photo 1",
+            caption: "You have a way of making every dress look like it was made just for you! 😍✨",
+          },
+          {
+            src: "./Images/7_1.jpg",
+            alt: "Photo 1",
+            caption: "Your innocence in this photo is like a breath of fresh air, filling me with joy and wonder every time I see it! 😍✨",
+          },
+          {
+            src: "./Images/9_1.JPG",
+            alt: "Photo 1",
+            caption: "The care and affection you show your pets is unparalleled,  a true demonstration of your loving nature! ✨",
+          },
+          {
+            src: "./Images/10_1.jpeg",
+            alt: "Photo 1",
+            caption: "I'm continually amazed by the depth and richness of your personality, which makes every moment with you unforgettable! 😍✨",
+          },
+          {
+            src: "./Images/11_1.jpg",
+            alt: "Photo 1",
+            caption: "In your traditional attire, you're a breathtaking sight, turning heads and stealing hearts wherever you go! 😍✨",
+          },
+          {
+            src: "./Images/12_1.jpg",
+            alt: "Photo 1",
+            caption: `In this picture's backdrop, it's whispered: "You are exactly where you need to be" And every glance at you confirms you're where I belong! 😍✨`,
+          },
+          {
+            src: "./Images/13_1.jpg",
+            alt: "Photo 1",
+            caption: "In every pixel of this photo, you're a masterpiece painted by the hands of the divine! 😍✨",
+          },
+       //   {
+       //     src: "./Images/14_1.jpeg",
+       //     alt: "Photo 1",
+       //     caption: "You are absolutely breathtaking in this photo! 😍✨",
+       //   },
+          {
+            src: "./Images/3_1.png",
+            alt: "Photo 1",
+            caption: "Your love gives me wings, lifting me up and carrying me through life's journey! 😍✨",
           },
           {
             src: "./Images/4.jpg",
             alt: "Photo 2",
             caption: "You have such a radiant smile that brightens up my day! 😄💕",
           },
-          {
-            src: "./Images/5.jpg",
-            alt: "Photo 2",
-            caption: "Every time I see a picture of you, I fall in love all over again! 🥰💘",
-          },
+       //   {
+       //     src: "./Images/5.jpg",
+       //     alt: "Photo 2",
+       //     caption: "Every time I see a picture of you, I fall in love all over again! 🥰💘",
+       //   },
 
           {
             src: "./Images/6.jpg",
@@ -90,11 +145,11 @@
             caption: "This photo showcases your inner and outer beauty flawlessly! 🌹✨",
           },
 
-          {
-            src: "./Images/7.jpg",
-            alt: "Photo 2",
-            caption: "Your eyes are like deep pools of wonder; they tell a story all on their own! 🌊✨",
-          },
+   //       {
+   //         src: "./Images/7.jpg",
+   //         alt: "Photo 2",
+   //         caption: "Your eyes are like deep pools of wonder; they tell a story all on their own! 🌊✨",
+   //       },
 
           {
             src: "./Images/8.jpg",
@@ -120,22 +175,27 @@
             caption: "You've got that radiant glow, and this saari accentuates it perfectly! ✨💛",
           },
 
-          {
-            src: "./Images/12.jpg",
-            alt: "Photo 2",
-            caption: "Your face is a work of art! 🎨💛 Absolutely stunning! 😍",
-          },
+         // {
+         //   src: "./Images/12.jpg",
+         //   alt: "Photo 2",
+         //   caption: "Your face is a work of art! 🎨💛 Absolutely stunning! 😍",
+         // },
 
-          {
-            src: "./Images/13.jpg",
-            alt: "Photo 2",
-            caption: "You have a way of making every moment look magical, just like this photo! 🌈✨",
-          },
+        //  {
+        //    src: "./Images/13.jpg",
+        //    alt: "Photo 2",
+        //    caption: "You have a way of making every moment look magical, just like this photo! 🌈✨",
+        //  },
 
           {
             src: "./Images/14.jpg",
             alt: "Photo 2",
             caption: "In your radiant face, I see a love that embraces the world with a warm and tender glow! 😍💛",
+          },
+          {
+            src: "./Images/2.JPEG",
+            alt: "Photo 1",
+            caption: "You are absolutely breathtaking in this photo! 😍✨",
           },
         ];
 
@@ -216,7 +276,7 @@
         <input style="max-width: 60px;" type="password" id="password" placeholder="password" />
       </div>
       <div class="about-content">
-        <img style="max-width: 960px; margin: 0 auto; padding: 20px;" src="./Images/3.jpg" alt="Anni">
+        <img style="max-width: 560px; margin: 0 auto; padding: 20px;" src="./Images/bottomCover.jpg" alt="Anni">
         <div style="color: red; font-size: 50px; position: left;" class="overlay-caption">ANNI SINGH</div>
       </div>
     </section>
@@ -239,7 +299,7 @@
         </div>
 
         <div id="audio-player">
-          <audio id="background-music" src="./Images/1.mp3" autoplay loop controls volume="0.5"></audio>
+          <audio id="background-music" src="./Images/song.mp3" autoplay loop controls volume="0.2"></audio>
         </div>
         
         <!-- 'autoplay loop controls' above audio -->
