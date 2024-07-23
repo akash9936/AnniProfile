@@ -2,6 +2,34 @@
 
 // Letter content stored in a variable
 const letterContent = `
+
+<p>25 July 2024,</p>
+<p>My Precious Anni,</p>
+
+<p>Happy Birthday to the woman who brightens my world! 🎉💖🎂</p>
+
+<p>I know I'm already in your heart because you love me so much, and now I want to fill your every thought too—because, let's be honest, there's plenty of room for me to take over! 😉❤️</p>
+
+<p>You know, if you were the Titanic, you wouldn't sink like it did. Even the ice would melt at the sight of you. Your smile is so powerful and enchanting that you turn the coldest moments into warmth and the darkest days into light. Just being around you makes everything brighter and better. 🌟✨💫</p>
+
+<p>I love how we share everything, even when we’re thousands of kilometres apart. The joy of online shopping together and recounting each incident twice—first in our minds to remember it for our calls, and then actually sharing it on the call—makes our long-distance relationship feel incredibly connected and special. 🛍️💬📞</p>
+
+<p>You’ve been my rock even you are a rose, supporting me through all my downsides—whether it was during my busy office days, the chaos of house construction, or my appraisal cycle. Your devoted support is the heartbeat of my life and the source of my strength. 🌹💪🏽❤️</p>
+
+<p>You’ve enriched my life in so many wonderful ways. Your kindness, the lessons you’ve taught me, and your strength inspire me daily. Your love has truly made me a better person. I’m deeply grateful for you. 🙏💖🌟</p>
+
+<p>I miss you every day and can't wait to spend my life capturing your beautiful smile in photos. Yes, I'll gladly be your personal photographer forever. 📸💕</p>
+
+<p>As we celebrate your birthday today, my charming chick, I can't help but dream about all the future adventures we'll embark on together. From exploring new places to cherishing memories like those we created in Raipur, I'm excited about every moment we’ll share. 🌍🗺️✨</p>
+
+<p>Happy birthday, my love! My wish for you is a year filled with happiness, getting result of all your hard work, and endless love. May your ketu works for your wishes. 🎈🎁🌟💫</p>
+
+<p>Loving you always,</p>
+
+<p>Your Personal Photographer</p>
+
+<hr> <!-- Adding a horizontal line to separate the two letters -->
+
 <p>14 Feb 2024,</p>
 <p>Happy Valentine's Day! ❤️</p>
 
