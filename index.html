@@ -4,37 +4,23 @@
 <head>
   <title>Birthday Wishes for Anni my Love</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>Random Background Color</title>
   <style>
-    body {
-      transition: background-color 0.5s ease-in-out;
-    }
+   
   </style>
-   <script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="Images/Snowfall.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
   <script>
-    window.onload = function() {
-    document.getElementById("background-music").volume = 0.2;
-};
-
-    function getRandomColor() {
-      const letters = 'ABCDEF';
-      let color = '#';
-      for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 6)];
-      }
-      return color;
-    }
-
-    setInterval(function () {
-      document.body.style.backgroundColor = getRandomColor();
-    }, 1000);
+    window.onload = function () {
+      document.getElementById("background-music").volume = 0.2;
+    };
   </script>
-</body>
 
-<body>
   <header>
     <div class="top-bar"></div>
     <nav>
@@ -59,7 +45,8 @@
 
     <section id="gallery">
       <div class="container2">
-        <h2>My love, each image in this gallery speaks volumes about your dynamic cuteness, reminding me why I fall in love with you all over again every time I see them. 📸💖</h2>
+        <h2>My love, each image in this gallery speaks volumes about your dynamic cuteness, reminding me why I fall in
+          love with you all over again every time I see them. 📸💖</h2>
         <div class="gallery" id="photoGallery">
         </div>
 
@@ -72,7 +59,7 @@
       <script>
         // Photo data
         const photos = [
-       
+
           {
             src: "./Images/6_1.jpeg",
             alt: "Photo 1",
@@ -118,11 +105,11 @@
             alt: "Photo 1",
             caption: "In every pixel of this photo, you're a masterpiece painted by the hands of the divine! 😍✨",
           },
-       //   {
-       //     src: "./Images/14_1.jpeg",
-       //     alt: "Photo 1",
-       //     caption: "You are absolutely breathtaking in this photo! 😍✨",
-       //   },
+          //   {
+          //     src: "./Images/14_1.jpeg",
+          //     alt: "Photo 1",
+          //     caption: "You are absolutely breathtaking in this photo! 😍✨",
+          //   },
           {
             src: "./Images/3_1.png",
             alt: "Photo 1",
@@ -133,11 +120,11 @@
             alt: "Photo 2",
             caption: "You have such a radiant smile that brightens up my day! 😄💕",
           },
-       //   {
-       //     src: "./Images/5.jpg",
-       //     alt: "Photo 2",
-       //     caption: "Every time I see a picture of you, I fall in love all over again! 🥰💘",
-       //   },
+          //   {
+          //     src: "./Images/5.jpg",
+          //     alt: "Photo 2",
+          //     caption: "Every time I see a picture of you, I fall in love all over again! 🥰💘",
+          //   },
 
           {
             src: "./Images/6.jpg",
@@ -145,11 +132,11 @@
             caption: "This photo showcases your inner and outer beauty flawlessly! 🌹✨",
           },
 
-   //       {
-   //         src: "./Images/7.jpg",
-   //         alt: "Photo 2",
-   //         caption: "Your eyes are like deep pools of wonder; they tell a story all on their own! 🌊✨",
-   //       },
+          //       {
+          //         src: "./Images/7.jpg",
+          //         alt: "Photo 2",
+          //         caption: "Your eyes are like deep pools of wonder; they tell a story all on their own! 🌊✨",
+          //       },
 
           {
             src: "./Images/8.jpg",
@@ -175,17 +162,17 @@
             caption: "You've got that radiant glow, and this saari accentuates it perfectly! ✨💛",
           },
 
-         // {
-         //   src: "./Images/12.jpg",
-         //   alt: "Photo 2",
-         //   caption: "Your face is a work of art! 🎨💛 Absolutely stunning! 😍",
-         // },
+          // {
+          //   src: "./Images/12.jpg",
+          //   alt: "Photo 2",
+          //   caption: "Your face is a work of art! 🎨💛 Absolutely stunning! 😍",
+          // },
 
-        //  {
-        //    src: "./Images/13.jpg",
-        //    alt: "Photo 2",
-        //    caption: "You have a way of making every moment look magical, just like this photo! 🌈✨",
-        //  },
+          //  {
+          //    src: "./Images/13.jpg",
+          //    alt: "Photo 2",
+          //    caption: "You have a way of making every moment look magical, just like this photo! 🌈✨",
+          //  },
 
           {
             src: "./Images/14.jpg",
@@ -245,7 +232,6 @@
         // Call the function to create the gallery
         createGallery();
       </script>
-
     </section>
 
     <section id="about">
@@ -260,7 +246,7 @@
             font-weight: bold;
             margin-bottom: 10px;
           }
-  
+
           input[type="password"] {
             max-width: 200px;
             padding: 8px;
@@ -290,7 +276,7 @@
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="message">Birthday Message:  </label>
+            <label for="message">Birthday Message: </label>
             <textarea id="message" name="message" required></textarea>
 
             <button type="submit">Submit</button>
@@ -299,9 +285,9 @@
         </div>
 
         <div id="audio-player">
-          <audio id="background-music" src="./Images/song.mp3" autoplay loop controls volume="0.2"></audio>
+          <audio id="background-music" src="./Image/songs.mp3" autoplay loop controls volume="0.0"></audio>
         </div>
-        
+
         <!-- 'autoplay loop controls' above audio -->
 
         <div class="guestbook-messages">
